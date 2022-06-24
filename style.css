@@ -1,0 +1,196 @@
+/* CSS for index.html AC Sign Up Form */
+:root{
+    --bgCol: transparent;
+    --aqua: RGB(48, 168, 134);
+
+    --lightTan: #fdfae2;
+    --medTan: #eee5c1;
+    --darkTan: #887965;
+}
+
+@font-face{ 
+    font-family: Humming;
+    src:url("/nintendoP_Humming-E_002pr.otf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+     background: no-repeat center/100% url("/EROevBcUwAETheK.jpg") ;
+     background-size: cover;
+     height: 100vh;
+     display: grid;
+     grid-template-columns: 20px repeat(4, 1fr) 20px;
+     grid-template-rows: 20px 0.5fr repeat(3, 1fr) 20px;
+
+     font-family: "Humming", sans-serif;
+     letter-spacing: 0.5px;
+     color: var(--darkTan);
+}
+
+.banner{
+    background-color: RGBa(48, 168, 134, 0.8);
+    border-top: 2px dashed white;
+    border-bottom: 2px dashed white;
+    outline: 5px solid RGBa(48, 168, 134, 0.8);
+    width: 100vw;
+    height: 40px;
+    position: relative;
+    top: 20px;
+    display:flex;
+    justify-content: center;
+    color: RGB(230, 253, 232);
+    overflow: hidden;
+}
+
+.clip_circle{
+    grid-area: 2/5;
+    margin-left: -30px;
+    margin-bottom: 5px;
+    align-self: end;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 15px ridge rgb(215, 212, 212);
+    background: transparent; 
+}
+
+.clip_rectangle{
+    grid-area: 3/5;
+    margin-left: -90px;
+    margin-top: -20px;
+    z-index: 2;
+    width: 180px;
+    height: 55px;
+    border: 15px ridge rgb(215, 212, 212);
+    border-radius: 5px;
+    background: transparent;
+}
+
+ .clipboard{
+     grid-area: 3/ 4/ 6/ 6;
+     background-color:rgb(154, 119, 74);
+     border-radius: 30px;
+     background:  url("/clipboardtexture.jpeg");
+     background-size: cover;
+     background-position: center ;
+     margin: 0px 30px;
+     border: 1px solid RGB(210, 167, 129);
+     border-right: 7px solid rgb(196, 156, 120);
+     border-bottom: 7px solid rgb(190, 150, 115);
+
+
+     display: grid;
+  
+               }
+.clipboard_paper{
+    background: white;
+    background: rgb(250, 244, 237);
+    margin: 20px 30px;
+    border-radius: 2px;
+
+}
+
+form {
+    margin: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.form_row{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3px;
+
+}
+
+.form_row > input, .form_row > select, .form_row {
+    flex: 1;
+}
+
+
+input, select{
+    border-radius:10px;
+    height: 30px;
+    line-height: 1.6;
+    border: 2px solid var(--darkTan);
+    background: rgb(250, 244, 237);
+    padding-left: 5px;
+    margin-left: 10px;
+}
+
+input:focus{
+    box-shadow: 0 0 5px rgb(154, 119, 74);   
+ 
+}
+
+.valid{
+    border: solid 2px rgb(63, 144, 77);
+}
+
+
+.div_titles{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+select {
+    flex: 2;
+    margin: 0 0 0 10px;
+}
+
+label{
+    margin-right: 5px;
+    width: 55px;
+}
+
+.hide {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+ }
+
+.validation {
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+   
+}
+
+input[type="image"]{
+    height: 80px;
+    border: hidden;
+}
+
+
+
+.div_button{
+    display:flex;
+    justify-content: center;
+}
+
+.moving_text:hover{
+    animation-play-state: paused;
+}
+
+@keyframes marquee{
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(-100%);}
+}
+
+/* media query to enable animation for only those who want it */
+@media (prefers-reduced-motion: no-preference) {
+    .moving_text{
+        animation: marquee 30s linear infinite;
+    }
+}
