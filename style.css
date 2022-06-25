@@ -1,7 +1,7 @@
 /* CSS for index.html AC Sign Up Form */
 :root{
     --bgCol: transparent;
-    /* --aqua: rgb(48, 168, 134); */
+    --aqua: rgb(48, 168, 134);
     --lightAqua: rgb(117, 223, 200);
     --lightTan: #fdfae2;
     --medTan: #eee5c1;
@@ -10,7 +10,7 @@
 
 @font-face{ 
     font-family: Humming;
-    src:url("/nintendoP_Humming-E_002pr.otf");
+    src:url("nintendoP_Humming-E_002pr.otf");
 }
 * {
     margin: 0;
@@ -21,7 +21,7 @@
 }
 
 body {
-     background: no-repeat center/100% url("/EROevBcUwAETheK.jpg") ;
+     background: no-repeat center/100% url("EROevBcUwAETheK.jpg") ;
      background-size: cover;
      height: 100vh;
      display: grid;
@@ -34,17 +34,17 @@ body {
 }
 
 .banner{
-    background-color: RGBa(48, 168, 134, 0.8);
+    background-color: rgba(48, 168, 134, 0.8);
     border-top: 2px dashed white;
     border-bottom: 2px dashed white;
-    outline: 5px solid RGBa(48, 168, 134, 0.8);
+    outline: 5px solid rgba(48, 168, 134, 0.8);
     width: 100vw;
     height: 40px;
     position: relative;
     top: 20px;
     display:flex;
     justify-content: center;
-    color: RGB(230, 253, 232);
+    color: rgb(230, 253, 232);
     overflow: hidden;
 }
 
@@ -76,7 +76,7 @@ body {
      grid-area: 3/ 4/ 6/ 6;
      background-color:rgb(154, 119, 74);
      border-radius: 30px;
-     background:  url("/clipboardtexture.jpeg");
+     background:  url("clipboardtexture.jpeg");
      background-size: cover;
      background-position: center ;
      margin: 0px 30px;
@@ -196,7 +196,6 @@ input[type="image"]{
 .div_button{
     display:flex;
     justify-content: space-around;
-                /* margin-top: -40px; */
 }
 
 .moving_text:hover{
