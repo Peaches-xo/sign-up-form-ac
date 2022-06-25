@@ -195,7 +195,8 @@ input[type="image"]{
 
 .div_button{
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
+                /* margin-top: -40px; */
 }
 
 .moving_text:hover{
@@ -207,9 +208,18 @@ input[type="image"]{
     100%{transform: translateX(-100%);}
 }
 
+#bubblegum, #peach{
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+}
+
+
 /* media query to enable animation for only those who want it */
 @media (prefers-reduced-motion: no-preference) {
     .moving_text{
+        display: block;
+        width: 100%;
         animation: marquee 30s linear infinite;
     }
 }

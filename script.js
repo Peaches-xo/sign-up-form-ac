@@ -4,6 +4,7 @@ const title2 = document.querySelector('#title2');
 const age = document.querySelector('#age');
 const email = document.querySelector('#email');
 
+
 const form = document.querySelector('#form');
 form.noValidate = true;
 
@@ -126,5 +127,17 @@ age.addEventListener('blur', (e) =>{
         } else {
             email.classList.remove('valid');
             email.classList.add('invalid');
+        }
+    });
+
+const bubblegum=document.querySelector("#bubblegum");
+    bubblegum.addEventListener('click', () => {
+
+        var audio = document.getElementById('audio');
+        if (audio.paused) {
+            audio.play();
+        }else{
+            audio.pause();
+            audio.currentTime = 0
         }
     });
