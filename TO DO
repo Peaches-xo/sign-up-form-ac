@@ -1,4 +1,0 @@
-TO DO
-
-
-* remove :valid from inputs at startup (only added after blur event and validation conditions matched)
