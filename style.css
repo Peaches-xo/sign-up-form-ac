@@ -10,7 +10,7 @@
 
 @font-face{ 
     font-family: Humming;
-    src:url("nintendoP_Humming-E_002pr.otf");
+    src:url("/nintendoP_Humming-E_002pr.otf");
 }
 * {
     margin: 0;
