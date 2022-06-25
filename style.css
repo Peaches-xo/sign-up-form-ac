@@ -8,10 +8,21 @@
     --darkTan: #887965;
 }
 
-@font-face{ 
+/* @font-face{ 
     font-family: Humming;
-    src:url("/nintendoP_Humming-E_002pr.otf");
+    src: url("nintendoP_Humming-E_002pr.otf");
+} */
+
+@font-face {
+    font-family: 'nintendop_humming-e_002prRg';
+    src: url('nintendop_humming-e_002pr-webfont.woff2') format('woff2'),
+         url('nintendop_humming-e_002pr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
+
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +39,7 @@ body {
      grid-template-columns: 20px repeat(4, 1fr) 20px;
      grid-template-rows: 20px 0.5fr repeat(3, 1fr) 20px;
 
-     font-family: "Humming", sans-serif;
+     font-family: 'nintendop_humming-e_002prRg', sans-serif;
      letter-spacing: 0.5px;
      color: var(--darkTan);
 }
