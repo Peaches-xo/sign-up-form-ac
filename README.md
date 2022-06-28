@@ -1,7 +1,7 @@
 # sign-up-form-ac
 ## The Odin Project // Animal Crossing version of a Sign Up Form
 ---
-![screenshot Animal Crossing Sign Up Form](/Screen%20Shot%202022-06-25%20at%201.46.22%20pm.png)
+![screenshot Animal Crossing Sign Up Form](/images/Screen%20Shot%202022-06-25%20at%201.46.22%20pm.png)
 
 ### **Goals** 
 Create a functional sign up form using HTML, CSS and Javascript. 
