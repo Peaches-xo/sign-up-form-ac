@@ -13,16 +13,6 @@
     src: url("nintendoP_Humming-E_002pr.otf");
 }
 
-/* @font-face {
-    font-family: 'Humming';
-    src: url('nintendop_humming-e_002pr-webfont.woff2') format('woff2'),
-         url('nintendop_humming-e_002pr-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-} */
-
-
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +22,7 @@
 }
 
 body {
-     background: no-repeat center/100% url("EROevBcUwAETheK.jpg") ;
+     background: no-repeat center/100% url("images/EROevBcUwAETheK.jpg") ;
      background-size: cover;
      height: 100vh;
      display: grid;
@@ -87,7 +77,7 @@ body {
      grid-area: 3/ 4/ 6/ 6;
      background-color:rgb(154, 119, 74);
      border-radius: 30px;
-     background:  url("clipboardtexture.jpeg");
+     background:  url("images/clipboardtexture.jpeg");
      background-size: cover;
      background-position: center ;
      margin: 0px 30px;

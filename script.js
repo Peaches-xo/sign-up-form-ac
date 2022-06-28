@@ -8,6 +8,10 @@ const email = document.querySelector('#email');
 const form = document.querySelector('#form');
 form.noValidate = true;
 
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+  })
+
 firstName.addEventListener('blur', () =>{
     let valiImg = document.querySelector("input#name+img.validation");
 
